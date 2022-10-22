@@ -5,42 +5,24 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código: 
-  var string1 = " x es mayor ";
-  var string2 =  "y es mayor "; 
-  var string3 = " x e y son iaguales" ;
-
-  if ( x > y) {
-    return string1 ; 
-       if (x < y) {
-        return string2 ;
-       }
-       if (x==y){
-        return string3 ;
-      
-
-       }
-      
-
-      
-    }
-
-
+   if ( x > y){
+    return x;
+   }
+   return y;
   
+    
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  var string1 = "allowed" ;
-  var string2 = "not allowed" ;
-  edad = x
-  if (x > 18) {
-    return string1 ;
+  
+  
+  if (edad > 17) {
+    return "Allowed"  ;
   }
-  if (x < 18 ) {
-    return string2 ;
-  }
+  return "Not allowed"
 }
   
 function conection(status) {
@@ -49,17 +31,14 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  var string = "online" ;
-  var string1 = "away" ;
-  var string2 = "offline" ;
-  status = x ;
-  if (x === 1) {
-    return string ;
+ 
+  if (status === 1) {
+    return "Online";
   }
-  if (x === 2) {
-    return string1 ;
+  if (status === 2) {
+    return "Away";
   }
-  return string2 ;
+  return "Offline";
 
 
 }
@@ -72,20 +51,17 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   
-  var string1 = "Guten Tag" ;
-  var string2 = "Ni Hao" ;
-  var string3 = "hello" ;
-  var string4 = "hola!" ;
+  
   if (idioma === "aleman"){
-    return string1 ;
+    return "Guten Tag!";
   }
 if (idioma === "mandarin"){
-  return string2 ;
+  return "Ni Hao!";
 }
 if (idioma === "ingles"){
-  return string3
+  return "Hello!";
 }
-  return string4 ;
+  return "Hola!";
 } 
 
 function colors(color) {
@@ -253,15 +229,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  let numero = '5';
-let i = 5;
-
+var i = 0;
 do {
-  i = i + 1;
-  numero = numero + i;
-} while (i < 13);
+  i = i++
+  numero = numero + 5;
+} while (i < 8);
 
-console.log(numero); 
+return numero; 
 }
 
 
